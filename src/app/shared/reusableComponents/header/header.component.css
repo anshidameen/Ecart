@@ -1,0 +1,39 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between left and right items */
+    padding: 0 20px; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Background color for the container */
+}
+
+.button-container button {
+    margin: 0 10px; /* Space between buttons */
+}
+
+.center-button {
+    flex-grow: 1; /* Allow this section to grow and push content to the center */
+    text-align: center; /* Center the text within this section */
+}
+
+.end-buttons {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.valign-center {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+/* Optional: Style dropdown menu */
+.mat-menu {
+    min-width: 160px; /* Set minimum width for dropdown */
+}
+
+.mat-menu-item {
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.mat-menu-item:hover {
+    background-color: #e3f2fd; /* Highlight color on hover */
+}

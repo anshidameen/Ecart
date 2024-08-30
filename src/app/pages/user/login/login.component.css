@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 900px; /* Larger box */
+    padding: 30px; /* More padding */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Emphasized box shadow */
+    border-radius: 5px;
+    text-align: center;
+    position: absolute; /* Positioning for centering */
+    top: 50%; /* Centering vertically */
+    left: 50%; /* Centering horizontally */
+    transform: translate(-50%, -50%); /* Corrects the offset caused by top and left */
+}
+
+.main-heading {
+    margin: 0;
+    font-size: 26px; /* Larger font */
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    margin: 0;
+    font-size: 18px; /* Larger font */
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More space between fields */
+    text-align: left; /* Aligning labels and inputs to the left */
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.signup-link {
+    text-decoration: none;
+    font-size: 12px;
+    color: #e41d1d;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.signin-button {
+    padding: 10px 20px;
+    background-color: #000; /* Black button */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: #333; /* Lighter black on hover */
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  

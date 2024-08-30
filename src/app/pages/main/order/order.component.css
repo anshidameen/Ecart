@@ -1,0 +1,17 @@
+form.border {
+    border: 2px solid #ddd;
+
+}
+
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+
+.btn-custom:hover {
+    background-color: #333;
+
+}

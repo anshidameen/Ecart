@@ -1,0 +1,52 @@
+<div class="container d-flex flex-wrap"  *ngIf="!selectedCategory.length && !selectedSub.length && shoppingList.length">
+    <div *ngFor="let shop of shoppingList" class="card">
+        <img [src]="shop.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{shop.name}}</h5>
+            <p class="card-text">{{shop.details}}</p>
+            <div class="row">
+                <div class="col">{{shop.price}}</div>
+                <div class="col">{{shop.discount}}</div>
+            </div>
+            <div class="row">
+                <div class="col"><button (click)="onClick(shop)" routerLink="/product">Buy</button></div>
+                <div class="col"><Button (click)="onCart(shop)" routerLink="/cart">cart</Button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  class="container d-flex flex-wrap" *ngIf="selectedCategory.length > 0 && !selectedSub.length" >
+    <div *ngFor="let item of selectedCategory" >
+        <img [src]="item.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">{{item.details}}</p>
+            <div class="row">
+                <div class="col">{{item.price}}</div>
+                <div class="col">{{item.discount}}</div>
+            </div>
+            <div class="row">
+                <div class="col"><button (click)="onClick(item)" routerLink="/product">Buy</button></div>
+                <div class="col"><Button (click)="onCart(item)" routerLink="/cart">cart</Button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  class="container d-flex flex-wrap" *ngIf="selectedSub.length > 0">
+    <div *ngFor="let subItem of selectedSub">
+        <img [src]="subItem.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{subItem.name}}</h5>
+            <p class="card-text">{{subItem.details}}</p>
+            <div class="row">
+                <div class="col">{{subItem.price}}</div>
+                <div class="col">{{subItem.discount}}</div>
+            </div>
+            <div class="row">
+                <div class="col"><button (click)="onClick(subItem)" routerLink="/product">Buy</button></div>
+                <div class="col"><Button (click)="onCart(subItem)" routerLink="/cart">cart</Button></div>
+            </div>
+        </div>
+    </div>
+</div>

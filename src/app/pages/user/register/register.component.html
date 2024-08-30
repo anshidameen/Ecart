@@ -1,0 +1,32 @@
+<div class="container">
+    <form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" ngModel>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="mobile">Mobile</label>
+                <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Mobile Number" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" ngModel>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="username">User Name</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="Username" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+                    ngModel>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>

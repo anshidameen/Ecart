@@ -1,0 +1,36 @@
+.row {
+    padding-top: 20px;
+    padding-left: 330px;
+
+}
+
+.card-img-top {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+}
+
+#image {
+    width: 380px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    width: 80px;
+    border-radius: 6px;
+
+}
+
+.input1 {
+    width: 200px;
+}
+
+.button1 {
+    border: none;
+    background-color: white;
+}

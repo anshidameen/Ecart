@@ -1,0 +1,129 @@
+<div class="button-container">
+    <button mat-button routerLink="/home">Home</button>
+    <button mat-button [matMenuTriggerFor]="shop" >
+        <div class="valign-center">
+            <span>Shop</span>
+            <!-- <i class="bi bi-caret-down-fill"></i> -->
+        </div>
+    </button>
+    <button mat-button routerLink="/about">About Us</button>
+    <button mat-button routerLink="/contact">Contact</button>
+
+    <div class="center-button">
+        <button mat-button routerLink="/home">Vestire</button>
+    </div>
+
+    <div class="end-buttons">
+        <button mat-button routerLink="/cart"><i class="bi bi-bag"></i></button>
+        <button mat-button routerLink="/login">Login</button>
+    </div>
+
+    <mat-menu #shop="matMenu">
+        <button mat-menu-item routerLink="/categories">All</button>
+        <button mat-menu-item [matMenuTriggerFor]="men" (click)=" navigateToCategory('Men')" >Men</button>
+        <button mat-menu-item [matMenuTriggerFor]="women" (click)=" navigateToCategory('Women')">Women</button>
+        <button mat-menu-item [matMenuTriggerFor]="kids" (click)=" navigateToCategory('Kids')">Kids</button>
+        <button mat-menu-item [matMenuTriggerFor]="access" (click)=" navigateToCategory('Accessories')">Accessories</button>
+        <button mat-menu-item [matMenuTriggerFor]="jewellary" (click)=" navigateToCategory('Jewellary')">Jewellary</button>
+    </mat-menu>
+    <mat-menu #men="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="topWearMen" (click)="navigateToSub('Men','Top Wear')">Top wear</button>
+        <button mat-menu-item [matMenuTriggerFor]="bottomWearMen">Bottom wear</button>
+        <button mat-menu-item [matMenuTriggerFor]="footWearMen">Foot wear</button>
+        <button mat-menu-item [matMenuTriggerFor]="accesMen">Accessories</button>
+        <button mat-menu-item >Watches</button>
+    </mat-menu>
+        <mat-menu #topWearMen="matMenu">
+            <button mat-menu-item>T-Shirts</button>
+            <button mat-menu-item>Shirts</button>
+            <button mat-menu-item>Sweatshirts</button>
+            <button mat-menu-item>Jackets</button>
+            <button mat-menu-item>Blazer</button>    
+        </mat-menu>
+        <mat-menu #bottomWearMen="matMenu">
+            <button mat-menu-item>Jeans</button>
+            <button mat-menu-item>Trousers & Pants</button>
+            <button mat-menu-item>Shorts</button>
+            <button mat-menu-item>Track Pants</button>  
+        </mat-menu>
+        <mat-menu #footWearMen="matMenu">
+            <button mat-menu-item>Casual Shoes</button>
+            <button mat-menu-item>Sport Shoes</button>
+            <button mat-menu-item>Formal Shoes</button>
+            <button mat-menu-item>Snekars</button>
+            <button mat-menu-item>Flip Flops</button>   
+            <button mat-menu-item>Sandals</button>  
+        </mat-menu>
+        <mat-menu #accesMen="matMenu">
+            <button mat-menu-item>All</button>
+            <button mat-menu-item>Caps & Hats</button>
+            <button mat-menu-item>Snekars</button>     
+        </mat-menu>
+
+
+    <mat-menu #women="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="ethinic">Ethinic</button>
+        <button mat-menu-item [matMenuTriggerFor]="bottomWearWomen">Western</button>
+        <button mat-menu-item>Saree</button>
+        <button mat-menu-item >Foot wear</button>
+        <button mat-menu-item >Accessories</button>
+        <button mat-menu-item >Beauty</button>
+        <button mat-menu-item >Watches</button>
+    </mat-menu>
+    <mat-menu #ethinic="matMenu">
+        <button mat-menu-item >Kurthis</button>
+        <button mat-menu-item >Churidar & Salwars</button>
+        <button mat-menu-item >Tshirts</button>
+        <button mat-menu-item >Shirts</button>
+        <button mat-menu-item >jackets & Sweaters</button>
+        <button mat-menu-item >Lehangas</button>
+    </mat-menu>
+    <mat-menu #bottomWearWomen="matMenu">
+        <button mat-menu-item >Jeans & Jeggins</button>
+        <button mat-menu-item >Leggings</button>
+        <button mat-menu-item >Skirts</button>
+        <button mat-menu-item >Shorts</button>
+        <button mat-menu-item >Trackpants</button>
+        <button mat-menu-item >YogaPants</button>
+        <button mat-menu-item >Dresses & Jumpsuits</button>
+    </mat-menu>
+    <mat-menu #ethinic="matMenu">
+        <button mat-menu-item >Kurthis</button>
+        <button mat-menu-item >Churidar & Salwars</button>
+        <button mat-menu-item >Tshirts</button>
+        <button mat-menu-item >Shirts</button>
+        <button mat-menu-item >jackets & Sweaters</button>
+        <button mat-menu-item >Lehangas</button>
+    </mat-menu>
+    <mat-menu #kids="matMenu">
+        <button mat-menu-item >Boys</button>
+        <button mat-menu-item >Girls</button>
+        <button mat-menu-item >Footwear</button>
+        <button mat-menu-item >Accessories</button>
+        <button mat-menu-item >Watches</button>
+        <button mat-menu-item >Infants</button>
+    </mat-menu>
+    <mat-menu #access="matMenu">
+        <button mat-menu-item>Sunglassed</button>
+        <button mat-menu-item>Riding gears</button>
+        <button mat-menu-item>Bags & wallets</button>
+        <button mat-menu-item>Caps</button>
+        <button mat-menu-item>Watches</button>
+        <button mat-menu-item>Toys</button>
+    </mat-menu>
+    <mat-menu #jewellary="matMenu"> 
+        <button mat-menu-item [matMenuTriggerFor]="gold">Gold</button>
+        <button mat-menu-item [matMenuTriggerFor]="diamonds">Diamond</button>
+    </mat-menu>
+    <mat-menu #gold="matMenu">
+        <button mat-menu-item >Bangles</button>
+        <button mat-menu-item >Rings</button>
+        <button mat-menu-item >Chain</button>
+        <button mat-menu-item >Gold Coins</button>
+    </mat-menu>
+    <mat-menu #diamonds="matMenu">
+        <button mat-menu-item >Necklase</button>
+        <button mat-menu-item >Rings</button>
+        <button mat-menu-item >Chain</button>
+    </mat-menu>
+</div>

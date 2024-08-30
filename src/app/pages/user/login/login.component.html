@@ -1,0 +1,16 @@
+<div class="login-container">
+    <h1 class="main-heading">Welcome Back!</h1>
+    <h2 class="sub-heading">Please login to your account</h2>
+    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="input-field" placeholder="Enter your username" formControlName="username" required>
+        <div *ngIf="loginForm.get('username')?.touched && loginForm.get('username')?.invalid"  class="error-message" > * UserName required</div>
+        <label for="password">Password</label>
+        <input type="password" id="password" class="input-field" placeholder="Enter your password" formControlName="password" required>
+        <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="error-message">* Password is required</div>
+        <div class="form-footer">
+           <p>Don't have an account?<a href="#" class="signup-link" routerLink="/signUp">Sign Up</a> here</p>
+            <button type="submit" class="signin-button">Sign In</button>
+        </div>
+    </form>
+</div>

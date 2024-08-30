@@ -1,0 +1,18 @@
+<div *ngIf="details">
+    <div class="row">
+        <div class="col-6" id="image">
+            <img [src]="details.imageUrl" class="card-img-top" alt="...">
+        </div>
+        <div class="col-6">
+            <h5 class="card-title">{{details.name}}</h5>
+            <p class="card-text">{{details.details}}</p>
+            <p class="card-text">{{details.price * count }}</p>
+            <p class="card-text">{{details.size}}</p>
+            <button type="submit" class="button1" (click)="minus()"><i class="bi bi-dash-square"></i></button>
+            <input type="text" class="input1" [value]="count">
+            <button type="submit" class="button1" (click)="add()" ><i class="bi bi-plus-square"></i></button><br>
+            <br>
+            <button (click)="onClick(details)" routerLink="/order" class="button">BUY</button>
+        </div>
+    </div>
+</div>

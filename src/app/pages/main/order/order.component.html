@@ -1,0 +1,41 @@
+
+<div class="container mt-4">
+    <form #orderForm="ngForm" (ngSubmit)="getOrderFormDate(orderForm.value)" novalidate class="border p-4 rounded">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="name">Product Name</label>
+                <input id="name" name="name" class="form-control" [(ngModel)]="newForm.name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="details">Product Details</label>
+                <input id="details" name="details" class="form-control" [(ngModel)]="newForm.details" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="size">Size</label>
+                <input id="size" name="size" class="form-control" [(ngModel)]="newForm.size" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="price">Price</label>
+                <input id="price" name="price" class="form-control" [(ngModel)]="newForm.price" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="address">Address</label>
+                <input id="address" name="address" class="form-control" [(ngModel)]="newForm.address" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="mobileNumber">Mobile</label>
+                <input id="mobileNumber" name="mobileNumber" class="form-control" [(ngModel)]="newForm.mobileNumber"
+                    required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="email">Email</label>
+                <input id="email" name="email" class="form-control" [(ngModel)]="newForm.email" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-custom">Submit</button>
+    </form>
+</div>

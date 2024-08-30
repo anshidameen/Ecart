@@ -1,0 +1,123 @@
+ .topsection1 {
+    background-image: url("https://img.freepik.com/free-photo/portrait-handsome-young-model-man-dressed-jeans-clothes-sunglasses-posing-isolated_158538-9103.jpg?t=st=1722168914~exp=1722172514~hmac=b2398b9ed862e9a9673fed043d67809034d4dc2cb08f6a05bf048b6115a5441d&w=826");
+    background-repeat: no-repeat;
+
+}
+
+.topsection2 {
+    background-image: url("https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-green-sweater-jeans-fashion-male-posing-studio-near-white-wall_158538-24100.jpg?t=st=1722162473~exp=1722166073~hmac=1f862d6b03b583276d7b81a3cc7ad6e4a07dc2a16ffe7249c029f74a5fe2e0c4&w=900");
+    background-repeat: no-repeat;
+}
+
+.section1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.subsection1 {
+    position: relative;
+    left: 800px;
+    bottom: 150px;
+
+}
+
+.subsection1 p {
+    padding-top: 200px;
+    color: red;
+    font-style: italic;
+}
+
+.subsection1 h3 {
+    padding-top: 70px;
+}
+
+
+.section2 {
+    margin-top: 400px;
+    max-width: 300px;
+    position: absolute;
+    left: 700px;
+    top: 140px
+}
+
+.section2 h1 {
+    font-style: italic;
+    position: relative;
+    bottom: 250px;
+    right: 200px;
+}
+
+.section3 {
+    margin-top: 450px;
+    max-width: 300px;
+    position: relative;
+    left: 60px;
+
+}
+
+.section3 h1 {
+    font-style: italic;
+    position: relative;
+}
+
+.section4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section4img1 {
+    position: relative;
+    left: 750px;
+    bottom: 300px;
+}
+
+.section4img1 h1 {
+    position: relative;
+    bottom: 290px;
+    right: 170px;
+}
+
+/* #buttonL {
+    position: relative;
+    background-color: white;
+    border: none;
+    font-size: 50px;
+    right: 900px;
+}
+
+#buttonR {
+    position: relative;
+    background-color: white;
+    border: none;
+    font-size: 50px;
+    left: 220px;
+    top: 9.5px;
+} */
+#buttonL, #buttonR {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none; 
+}
+
+#buttonL {
+    left: 0; 
+    margin-left: -800px; 
+}
+
+#buttonR {
+    right: 0; 
+    margin-right: -262px; 
+}
+
+.buttonS {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 40px;
+}
+ 

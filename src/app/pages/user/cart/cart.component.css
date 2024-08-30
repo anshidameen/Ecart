@@ -1,0 +1,29 @@
+.card {
+    width: 58rem;
+    margin: 20px;
+}
+
+.card-img-top {
+    border-radius: 8px;
+    height: 110px;
+    width: 90px;
+    padding: 10px;
+}
+
+.col-3 {
+    padding: 40px;
+}
+
+#CartButton {
+    margin: 40px;
+}
+
+section {
+    margin-top: -19px;
+    border: 1px solid #d3d3d3; 
+    padding: 10px;
+    border-radius: 5px; 
+}
+section p {
+    margin: 25px;
+}

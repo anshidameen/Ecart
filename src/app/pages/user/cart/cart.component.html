@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-9">
+        <div *ngFor="let cart of cartDetails" class="card">
+            <div class="row">
+                <div class="col-2">
+                    <img [src]="cart.imageUrl" class="card-img-top" alt="...">
+                </div>
+                <div class="col-3">
+                    {{cart.category}} {{cart.subCategory}} ({{cart.size}}) <br>
+                    {{cart.brand}}
+                </div>
+                <div class="col-3">
+                    {{cart.price}}
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" id="CartButton"> order</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-danger" id="CartButton" (click)="deleteCart(cart.id)"> remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="col-3">
+    <section>
+        <h3>Order Details</h3>
+        <p>Cart Total : {{price}}</p>
+        <p>Conveinience Fee <br> <a href="">What's this?</a></p>
+        <p>Delivary Fee</p>
+        <p>Amount Payable : {{price}}</p>
+    </section>
+  </div>
+    
+</div>
